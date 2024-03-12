@@ -3,9 +3,10 @@
 using namespace std;
 
 float kalkulatorPredkosci(float droga,float czas) {
-    //droga = droga * 1000;
-    //czas = czas * 60;
-    return droga/czas;
+    droga = droga * 1000;
+    czas = czas * 60;
+    float wynik = droga/czas*3.6;
+    return wynik;
 }
 
 int main(){
@@ -14,6 +15,7 @@ int main(){
 
 	cout<<"podaj odleglosc przejechana przez samochod w kilometrach"<<endl;
 	cin>>odleglosc;
+ 
 	cout<<"podaj czas przejazdu samochodu w minutach"<<endl;
 	cin>>czas;
 	
